@@ -17,7 +17,7 @@ AI アシスタント向けの共通ルール集（doctrine）。すべてのプ
 取り込み先のプロジェクトのルートで、タグを指定して実行する。
 
 ```sh
-git subtree add --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.git v0.1.0 --squash
+git subtree add --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.git v1.0.0 --squash
 ```
 
 このリポジトリの中身がそのまま `.ai/doctrine/` に入る。
@@ -27,7 +27,7 @@ git subtree add --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.g
 取り込むタグを変えて `pull` する。`--prefix` と `--squash` は取り込み時と同じにする。
 
 ```sh
-git subtree pull --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.git v0.2.0 --squash
+git subtree pull --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.git v1.1.0 --squash
 ```
 
 各版の変更内容は [GitHub Releases](https://github.com/mackie376/ai-doctrine/releases) のリリースノートを参照する。
