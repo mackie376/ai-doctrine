@@ -35,7 +35,19 @@ git subtree pull --prefix=.ai/doctrine https://github.com/mackie376/ai-doctrine.
 ## 取り込み先でのルール
 
 - `.ai/doctrine/` は編集しない。改善したい点はこのリポジトリに反映し、新しい版として取り込み直す
-- プロジェクト固有のルールは、各プロジェクトの `.ai/project/` に書く
+
+## 取り込み先の推奨構成
+
+| パス | 書くもの |
+| --- | --- |
+| `AGENTS.md` | 入口。`.ai/` のルールの読み込みと、作業ごとの手順の案内 |
+| `CLAUDE.md` など | ツールが決まった名前のファイルしか読まない場合に置く。`AGENTS.md` を読み込むだけにする |
+| `.ai/doctrine/` | このリポジトリ（subtree で取り込む） |
+| `.ai/project/rules.md` | プロジェクト固有のルール |
+| `.ai/project/workflows/` | 作業ごとの手順 |
+| `knowledge/` | 作るものへの理解。AI が更新する。入口は `knowledge/README.md` |
+
+各ディレクトリの扱いは `PRINCIPLES.md`「情報の置き場所」に従う。
 
 ## 版の上げ方
 
